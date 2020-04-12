@@ -59,27 +59,31 @@ function saveEvent() {
 //for loop to check time for each individual time block using moment to check time and
 // if statement to set attr(background color) for time block to match color based on time
 //past is grey, current is red future is green
+
 function colorCode(hourEl) {
 
     var currentTime = moment().hour();
     console.log(hourEl);
 
+    // if statement to show what time are. tried to use a switch statement and had trouble. come back and try again after everything works
+    if (hourEl < currentTime) {
+        "past"
+        console.log("past " + hourEl);
+    } else if (hourEl === currentTime) {
+        "present"
+        console.log("present " + hourEl);
+    } else {
+        "future"
+        console.log("future " + hourEl);
 
-    switch (hourEl) {
-        case hourEl < currentTime:
-            "past"
-            break;
-
-        case hourEl === currentTime:
-            "present"
-            break;
-        case hourEl < currentTime:
-            "future"
-            break;
-    }
-
-
+    };
 };
+
+
+
+
+
+
 
 //test to make sure on page reload events stays
 
