@@ -73,7 +73,7 @@ $("button").click(function () {
 });
 
 
-//color code to indicate whether it is in the past, present, or future
+//code to indicate whether it is in the past, present, or future
 //for loop to check time for each individual time block using moment to check time and
 // if statement to set attr(background color) for time block to match color based on time
 //past is grey, current is red future is green
@@ -83,15 +83,15 @@ function colorCode(hour) {
     var currentTime = moment().hour();
     //console.log(hour);
 
-    // if statement to show what time are. tried to use a switch statement and had trouble. come back and try again after everything works
+    // if statement to show return the correct description based on the current time. tried to use a switch statement and had trouble. come back and try again after everything works
     if (hour < currentTime) {
-        "past"
+        return "past";
         //console.log("past " + hour);
     } else if (hour === currentTime) {
-        "present"
+        return "present";
         //console.log("present " + hour);
     } else {
-        "future"
+        return "future";
         //console.log("future " + hour);
 
     };
