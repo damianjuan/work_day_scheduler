@@ -6,8 +6,8 @@ This is a simple calendar application that allows the user to save events for ea
 
 ## Libraries Used 
 
-Moment.js
-JQuery.js
-Bootstrap.css
-FontAwesome.css
+Moment.js   
+JQuery.js  
+Bootstrap.css  
+FontAwesome.css  
 
